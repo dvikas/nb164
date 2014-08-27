@@ -1,0 +1,39 @@
+<script src="jquery-1.9.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	/********************************/
+	$('ul li.parent input[type="checkbox"]')
+	.on('click',function(){
+		var status = $(this).is(':checked');
+		
+		$('ul li.child input[type="checkbox"]')
+		.prop('checked',status);
+	})	
+	/********************************/	
+});
+</script>
+<!------------------------  HTML START -------------------------->
+
+<ul >
+	<li class="parent">
+		<label><input type="checkbox" />Check/Uncheck All</label></li>
+	<li class="child"><label><input type="checkbox" />Noida</label></li>
+	<li class="child"><label><input type="checkbox" />Delhi</label></li>
+	<li class="child"><label><input type="checkbox" />Jaipur</label></li>
+	<li class="child"><label><input type="checkbox" />Bhopal</label></li>
+	<li class="child"><label><input type="checkbox" />Lucknow</label></li>
+	<li class="child"><label><input type="checkbox" />Kanpur</label></li>
+	<li class="child"><label><input type="checkbox" />Patna</label></li>
+</ul>
+<!------------------------  HTML END -------------------------->
+<style type="text/css">
+	div,ul,li,p,h2,button{
+		border:1px solid green;
+		padding:10px;
+	}
+
+	ul li.parent{
+		color:red;
+		font-weight:bold;
+	}
+</style>	

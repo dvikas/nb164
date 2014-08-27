@@ -1,0 +1,212 @@
+<script src="jquery-1.9.1.js" type="text/javascript"></script>
+<script src="jquery.validate.js" type="text/javascript"></script>
+<script src="additional-methods.js" type="text/javascript"></script>
+<script src="register.js" type="text/javascript"></script>
+
+<form action="" id="registerFormId" method="post">
+
+  <table cellspacing="0" width="60%" align="center">
+    <thead>
+      <tr>
+        <th colspan="2">Please fill the details below</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td width="40%">Uname :</td>
+        <td width="60%">
+          <input type="text"
+                 name="uname"
+                 value=""
+                 
+                 placeholder="Please enter name"
+                 autocomplete="off"
+                 maxlength="50"
+                 onCopy="return false"
+                 onPaste="return false"
+                 id="unameId" />
+        </td>
+      <tr>
+
+      <tr>
+        <td>Email :</td>
+        <td>
+          <input type="email" name="email"  placeholder="Please enter email" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>Password :</td>
+        <td>
+          <input type="password" name="password"  placeholder="Password" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>Confirm Password :</td>
+        <td>
+          <input type="password" name="cpassword"  placeholder="Confirm Password" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>Gender :</td>
+        <td>
+          <label><input type="radio" name="gender" value="m"  />Male</label>
+          <label><input type="radio" name="gender" value="f"  />Female</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Date Of Birth  :</td>
+        <td>
+          <input type="date" name="dob"  />
+        </td>
+      </tr>
+
+      <tr>
+        <td>Address :</td>
+        <td>
+          <textarea name="address" placeholder="MY address is"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Country :</td>
+        <td>
+          <select  name="country_id">
+            <option value="">-SELECT-</option>
+            <option value="in">India</option>
+            <option value="pk">Pakistan</option>
+            <option value="np">Nepal</option>
+            <option value="sl">Sri Lanka</option>
+            <option value="bd">BanglaDesh</option>
+          </select>
+        </td>
+      </tr>
+
+        <tr>
+          <td>Choose Fav Color</td>
+          <td><input type="color" name="color" /></td>
+        </tr>
+
+        <tr>
+          <td>Choose Fav Numner</td>
+          <td><input type="number" name="number" step="4"/></td>
+        </tr>
+
+        <tr>
+          <td>Choose Range</td>
+          <td><input type="range" name="range" /></td>
+        </tr>
+
+        <tr>
+          <td>Search</td>
+          <td><input type="search" name="search" /></td>
+        </tr>
+
+        <tr>
+          <td>Programming Lang :</td>
+          <td>
+            <select  multiple name="lang[]">
+              <option value="c">C</option>
+              <option value="cpp">C++</option>
+              <option value="java">Java</option>
+              <option value="php">PHP</option>
+              <option value="dotnet">.Net</option>
+            </select>
+          </td>
+        </tr>
+
+
+      <tr>
+        <td>Hobbies :</td>
+        <td>
+          <label><input type="checkbox" name="hobbies[]" value="cr" />Cricket</label>
+          <label><input type="checkbox" name="hobbies[]" value="hk" />Hockey</label>
+          <label><input type="checkbox" name="hobbies[]" value="fb" />Football</label>
+          <label><input type="checkbox" name="hobbies[]" value="ch" />Chess</label>
+          <label><input type="checkbox" name="hobbies[]" value="tn" />Tennis</label>
+        </td>
+      </tr>
+
+
+        <tr>
+          <td>Upload Avatar</td>
+          <td><input type="file" name="avatar" /></td>
+        </tr>
+
+        <tr>
+          <td>&nbsp;</td>
+          <td><input type="submit" name="submit" value="Done" /></td>
+        </tr>
+
+
+
+      </tr>
+    </tbody>
+  </table>
+</form>
+
+<style type="text/css">
+  body{
+    background-color: #FEECE9;
+    font-family: Comic Sans MS;
+  }
+  table{
+    background-color: #FDE1E1;
+    width:80%;
+  }
+  td,th{
+    border:1px solid #FBBFBF;
+    padding:10px;
+    font-size:20px;
+
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="number"],
+  input[type="search"],
+  input[type="file"],
+  textarea,select,
+  input[type="email"]
+  {
+    font-size:20px;
+    padding:5px 20px;
+    border-radius:20px 0px 20px 0px;
+    border:1px solid #F88B8B;
+    width:300px;
+    box-shadow:10px 10px 10px gray;
+  }
+  input[type="submit"]{
+    font-size:20px;
+    padding:5px 20px;
+    border:2px solid #F88B8B;
+    border-radius:10px;
+
+    width:100px;
+    box-shadow:10px 10px 10px gray;
+  }
+  input[type="submit"]:hover{
+    background-color: gray;
+     cursor: pointer;
+  }
+
+
+  table tr:nth-child(2n+1){
+    background-color: #FCCFCF;
+  }
+
+  table tr td:nth-child(2n+1){
+    text-align: right;
+  }
+  .error{
+	  color:red;
+	  float: left;
+  }
+  input.error{
+	  background-color: yellow;
+  }
+</style>

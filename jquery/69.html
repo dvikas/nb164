@@ -1,0 +1,46 @@
+<script src="jquery-1.9.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+/****************************************/
+		$('a#click1').on('click',function(){
+			$("#destinations").find("li").addClass('yellow');
+		});
+		
+		$('a#click2').on('click',function(){
+			$("#destinations").children("li").addClass('lightblue');
+		});
+/****************************************/
+	});
+</script>
+
+<ul id="destinations">
+	<li>Rome</li>
+		<ul id="france">
+			<li>Paris</li>
+			<li >Noida</li>
+			<li >Lucknow</li>
+		</ul>
+	<li class='promo'>Rio</li>
+	<li >Delhi</li>
+	<li >Kanpur</li>
+</ul>
+
+<hr>
+
+
+<a href="#" id="click1">find</a><hr>
+<a href="#" id="click2">children</a><hr>
+
+<style type="text/css">
+	li{
+		border:1px dotted green;
+		padding:10px; 
+	}
+	
+	.yellow{
+		background-color: yellow;
+	}	
+	.lightblue{
+		background-color: lightblue;
+	}
+</style>

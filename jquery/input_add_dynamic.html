@@ -1,0 +1,61 @@
+<script src="jquery-1.9.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	/********************************/
+	$('ul').on('click','span.plus',function(){
+		var obj = $('ul li.parent').clone();		
+		
+		obj.find('span.plus,span.minus').show();
+		obj.removeClass('parent').addClass('child');
+		$('ul').append(obj);
+		
+		/** remove plus minus from itself */
+		$(this).closest('li').find('span.plus,span.minus').hide();
+		/** remove plus minus from itself */
+		
+	});
+	
+	
+	$('ul').on('click','li.child span.minus',function(){
+		$(this).closest('li').remove();		
+		$('ul').find('li').last().find('span.plus,span.minus').show();		
+	});		
+	/********************************/	
+});
+</script>
+<!------------------------  HTML START -------------------------->
+
+<ul >
+	<li class="parent">
+		<input type="input"/>
+		<span class="plus">(+)</span>
+		<span class="minus">(-)</span>		
+	</li>
+</ul>
+<!------------------------  HTML END -------------------------->
+<style type="text/css">
+	div,ul,li,p,h2,button{
+		border:1px solid green;
+		padding:10px;
+		list-style:none;
+	}
+
+	ul li.parent{
+		color:red;
+		font-weight:bold;
+	}
+	.plus{
+		color:green;
+		padding:5px;
+	}
+	.minus{
+		color:blue;
+		padding:5px;
+	}
+	.plus, .minus{
+		cursor:pointer;
+	}
+	.plus:hover, .minus:hover{
+		font-size:15px;
+	}
+</style>	

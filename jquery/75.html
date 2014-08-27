@@ -1,0 +1,42 @@
+<script src="jquery-1.9.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+/****************************************/
+		$('a#click1').on('click',function(){			
+			var city = $('<h2>Before</h2>').addClass('yellow');
+			$("#destinations").before(city);
+		});
+
+		$('a#click2').on('click',function(){			
+			var city = $('<h2>After</h2>').addClass('lightblue');
+			$("#destinations").after(city);
+		});
+		
+/****************************************/
+	});
+</script>
+
+<ul id="destinations">
+	<li >Delhi</li>
+	<li >Kanpur</li>
+</ul>
+
+<hr>
+
+
+<a href="#" id="click1">Before</a><hr>
+<a href="#" id="click2">After</a><hr>
+
+<style type="text/css">
+	li{
+		border:1px dotted green;
+		padding:10px; 
+	}
+	
+	.yellow{
+		background-color: yellow;
+	}	
+	.lightblue{
+		background-color: lightblue;
+	}
+</style>

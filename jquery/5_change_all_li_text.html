@@ -1,0 +1,35 @@
+<script src="jquery-1.9.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+/****************************************/
+		$('button').on('click',function(){
+			$('ul.city li').text("Orlando");
+		});
+/****************************************/
+	});
+</script>
+<!------------------------  HTML START -------------------------->
+	<ul id="destinations">
+		<li>Rome</li>
+		<li>
+			<ul class="city">
+				<li>Kanpur</li>
+				<li>Lucknow</li>
+				<li>Patna</li>
+				<li>Noida</li>
+			</ul>
+		</li>
+		<li class='promo'>Rio</li>
+		
+	</ul>
+
+
+<button>Click to change text</button>
+<!------------------------  HTML END -------------------------->
+<style type="text/css">
+	p,li{
+		border:1px solid green;
+		padding:10px;
+	}
+
+</style>	
