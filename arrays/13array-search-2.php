@@ -1,4 +1,5 @@
 <?php
+
 // define array
 $cities = array(
   "France" => "Paris",

@@ -1,10 +1,9 @@
 <?php
 
-print_r(get_defined_functions());
 
 if(isset($_POST['comment'])) {
   $comment = trim($_POST['comment']);
-  echo ($comment);
+  echo nl2br($comment);
 }
 
 ?>

@@ -2,7 +2,7 @@
 // requirement : If sometime calculation goes wrong , but we don't require to show
 // negative sign
 
-$num = -23.55;
+$num = -23.50;
 echo abs($num);
 echo "\n";
 echo round($num);

@@ -17,12 +17,12 @@ $emails = array (
   666 => 'hello7@gmail.com',
 );
 
-
 $emails = array_map('quotesTrim',$emails);
 $emails = array_filter($emails);
 $emails = array_unique($emails);
 $emails = array_values($emails);
-
+print_r($emails);
+exit;
 function quotesTrim($email)
 {
   $email = trim($email,'" ');

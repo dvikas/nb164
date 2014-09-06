@@ -1,4 +1,9 @@
 <?php
+//for($i=0 ;$i<256 ;$i++)
+//echo "\n$i=>".chr($i);
+
+//exit;
+
 // define array
 $profile = array(
   "room_num" => "101room",
@@ -9,7 +14,7 @@ $profile = array(
   "gender" => "female",
   "sector" => "Asset Management"
 );
-natsort($profile);
+asort($profile);
 print_r($profile);
 ?>
 SORTING

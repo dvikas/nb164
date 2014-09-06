@@ -10,8 +10,9 @@ $rainbow = array(
               'g'=>'red');
 
 // randomize array
-shuffle($rainbow);
-print_r($rainbow);
-echo ($rainbow[0]);
+//shuffle($rainbow);
+//print_r($rainbow);
+//echo ($rainbow[0]);
 $key =  array_rand($rainbow);
+var_dump($key);
 echo $rainbow[$key];

@@ -5,7 +5,7 @@ $green = array('yellow', 'blue');
 
 // find common elements
 // output: ('yellow')
-$common = array_intersect($orange, $green);
+$common = array_intersect($green,$orange );
 print_r($common);
 
 // find elements in first array but not in second

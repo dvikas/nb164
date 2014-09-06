@@ -10,15 +10,16 @@
   var_dump($string);
   echo "\n------------\n";
 
+$hemant = 123456;
   /*
    * Replace php with zend
    * */
-$count = 1234;
   $newString = str_replace(
-  'php','zend',$string,$count);
+  'php','zend',$string);
+  
   echo "After replace 'php' with 'zend' string is => $newString";
   echo "\n-----COUNT-------\n";
-echo $count;
+echo $hemant;
   echo "\n------------\n";
 
 
@@ -26,21 +27,13 @@ echo $count;
   /*
    * Check 'week' is present in "weekend php"
    * */
-    $newString = 'week1';
-    $pos = strpos($newString, 'weekend');
+    $str = 'week end php';
+    $pos = strpos($str, 'week1');
     var_dump($pos);
 
-    if($pos !== false){
-      echo "Success :)";
+    if($pos === false){
+      echo "\n\nFAIL: :)";
     } else {
-      echo "Fail :(";
+      echo "\n\nSUCCESS :(";
     }
     echo "\n------------\n";
-    var_dump(0 == false);
-    var_dump(0 === false);
-    var_dump(11 == '11');
-    var_dump(11 === '11');
-
-
-
-

@@ -9,14 +9,15 @@ $movies = array (
 
 //var_export($movies);exit;
 echo array_shift($movies);
-
-print_r($movies);
-
+//echo "\n\n";
+//print_r($movies);
+//exit;
 echo array_pop($movies);
-print_r($movies);
 
 echo array_push($movies, 'sholay','Jai Ho!!','Happy@');
 print_r($movies);
 
 echo array_unshift($movies, 'The Incredibles');
-print_r($movies);exit;
+echo "\n\n";
+print_r($movies);
+exit;

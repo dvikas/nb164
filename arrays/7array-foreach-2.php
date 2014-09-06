@@ -1,17 +1,20 @@
 <?php
 // define array
 $cities = array(
-  "London",
-   "Washington D.C.",
-   "Paris",
-   "Delhi"
+    3 => "London",
+    6 => "Washington D.C.",
+    8 => "Paris",
+    12 => "Delhi"
 );
+// print_r($cities);
 
 // iterate over array
 // print each value
-foreach ($cities as $value) {
-
-  echo "$value is in \"   \" \n\n";
-  echo "$value is in \"   \" \n\n";
-  echo "$value is in \"   \" \n\n";
+for ($i = 3; $i <= 12; $i +=3) {
+    
+    echo $cities[$i];
+}
+echo "<hr>";
+foreach($cities as $abcd){
+    echo "$abcd<hr>";
 }

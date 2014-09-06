@@ -6,7 +6,7 @@
 //echo date('d M y', strtotime('tomorrow'));
 
 // output: '16 Nov 07'
-echo date('d M y', strtotime('next Friday'));exit;
+echo date('Y-m-d H:i:s', strtotime('2 Weekdays'));exit;
 
 // output: '10 Nov 07'
 //echo date('d M Y H:i:s', strtotime('48 hours ago'));
