@@ -1,0 +1,17 @@
+dir1 (root dir)
+  |
+  |-- file1.php <--- Need to include in another file
+  |
+  |-- dir2(child 1)
+  |   |   
+  |   |--- file2.php <-- Call this file from browser, and include file1 & file3  
+  |   |
+  |   |--- dir4
+  |         |
+  |         |--dir5
+  |            |
+  |            |--file3.php <--- Need to include in another file       
+  | 
+  |-- dir3(child 2)
+  | 
+  
