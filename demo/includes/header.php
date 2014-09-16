@@ -1,3 +1,7 @@
+<?php 
+	require_once('includes/functions.php');
+	require_once('includes/db.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -43,7 +47,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Manage Users <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="add_user.php"><i class="fa fa-plus"></i> Add New User</a></li>
-                <li><a href="#">Show All Users</a></li>
+                <li><a href="show_all_users.php">Show All Users</a></li>
               </ul>
             </li>
 			
