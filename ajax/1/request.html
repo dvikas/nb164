@@ -1,0 +1,40 @@
+<script src="jquery-1.9.1.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		$('button#chkId').on('click',function(){
+
+			$.ajax({
+				url : 'response.php',
+				data : {'myid':3,'mode':'select'},
+				type : 'post',
+				dataType : 'json',
+				beforeSend : function(){
+					console.log('Loader Start ...');
+				},
+				statusCode : {
+					200 : function(data){
+						$.each(data,function(key,value){
+							console.log('key => '+key+', value =>'+value);
+						});
+						console.log('Status : '+200);
+					},
+					404 : function(data){
+						alert("Page Not Found");
+					},
+				},
+				complete : function(){
+					console.log('Remove Loader...');
+				},
+				
+			});
+
+		});
+		
+		
+	});
+</script>
+
+
+<button id="chkId" type="button"> Click Me To Check Response</button>

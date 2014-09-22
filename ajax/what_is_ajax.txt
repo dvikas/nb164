@@ -1,0 +1,17 @@
+A Asynchronous 
+J javascript
+A And
+X XML
+
+AJAX is required to change content of "specific 
+element" through any event, dynamically without refresh entire web page.
+
+
+
+ (1) JS + HTML PAGE ---> PHP FILE ---> DATABASE 
+   ___return_____           |               |
+            |---------------|----return back|
+
+
+
+
