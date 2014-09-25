@@ -2,6 +2,8 @@
 	require_once('includes/functions.php');
 	require_once('includes/db.php');
 
+
+
 	$avatar = ($_POST['gender']=='m') ? 'male.jpg' :'female.jpg';
 
 	pr($_FILES);
@@ -27,6 +29,11 @@
 	$_POST['password'] = md5($_POST['password']);
 	pr($_POST);
 	
+	############################
+		$_POST = array_cleanup($_POST);
+	############################
+
+
 	$query = "INSERT INTO `users` SET ";
 	foreach($_POST as $col=>$val){
 		$query .= "`$col`='$val' ,";

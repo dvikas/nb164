@@ -1,8 +1,8 @@
 <?php
 
 $food = array(
-'fruits' => array('orange', 'banana', 'apple'),
-'veggie' => array('carrot', 'collard', 'pea')
+			'fruits' => array('orange', 'banana', 'apple'),
+			'veggie' => array('carrot', 'collard', 'pea')
 		);
 
 print_r($food);
